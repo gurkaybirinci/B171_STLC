@@ -1,6 +1,20 @@
 package birim_testi;
 
 public class BirimTestiProgrami {
+    public static void main(String[] args) {
+        BirimTestiProgrami program = new BirimTestiProgrami();
+        int[] sayilar = {25, 15, 5, 10, 20};
+
+        int toplam = program.toplamHesapla(sayilar);
+        System.out.println("Arraydeki Sayıların Toplamı: " + toplam);
+
+        double ortalama = program.ortalamaHesapla(sayilar);
+        System.out.println("Arraydeki Sayıların Ortalaması: " + ortalama);
+
+        int enBuyuk = program.enBuyukBul(sayilar);
+        System.out.println("Arraydeki En Büyük Sayı: " + enBuyuk);
+    }
+
     public int toplamHesapla(int[] sayilar) {
         int toplam = 0;
         for (int i = 0; i < sayilar.length; i++) {
@@ -25,19 +39,5 @@ public class BirimTestiProgrami {
             }
         }
         return enBuyuk;
-    }
-
-    public static void main(String[] args) {
-        BirimTestiProgrami program = new BirimTestiProgrami();
-        int[] sayilar = {25, 15, 5, 10, 20};
-
-        int toplam = program.toplamHesapla(sayilar);
-        System.out.println("Arraydeki Sayıların Toplamı: " + toplam);
-
-        double ortalama = program.ortalamaHesapla(sayilar);
-        System.out.println("Arraydeki Sayıların Ortalaması: " + ortalama);
-
-        int enBuyuk = program.enBuyukBul(sayilar);
-        System.out.println("Arraydeki En Büyük Sayı: " + enBuyuk);
     }
 }
