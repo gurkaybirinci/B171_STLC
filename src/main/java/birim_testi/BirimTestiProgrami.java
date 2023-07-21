@@ -32,12 +32,12 @@ public class BirimTestiProgrami {
         int[] sayilar = {25, 15, 5, 10, 20};
 
         int toplam = program.toplamHesapla(sayilar);
-        System.out.println("Dizideki Sayıların Toplamı: " + toplam);
+        System.out.println("Arraydeki Sayıların Toplamı: " + toplam);
 
         double ortalama = program.ortalamaHesapla(sayilar);
-        System.out.println("Dizideki Sayıların Ortalaması: " + ortalama);
+        System.out.println("Arraydeki Sayıların Ortalaması: " + ortalama);
 
         int enBuyuk = program.enBuyukBul(sayilar);
-        System.out.println("Dizideki En Büyük Sayı: " + enBuyuk);
+        System.out.println("Arraydeki En Büyük Sayı: " + enBuyuk);
     }
 }
